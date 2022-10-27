@@ -1,0 +1,71 @@
+#define _CRT_SECURE_NO_DEPRECATE
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+
+void main()
+{
+setlocale(LC_ALL, "RUS");
+char c;
+printf("Введите символ:");
+scanf("%c", &c);
+switch (c)
+{
+case '0':
+printf("Введено число '0'.\n");
+break;
+case '1':
+printf("Введено число '1'.\n");
+break;
+case '2':
+printf("Введено число '2'.\n");
+break;
+case '3':
+printf("Введено число '3'.\n");
+break;
+case '4':
+printf("Введено число '4'.\n");
+break;
+case '5':
+printf("Введено число '5'.\n");
+break;
+case '6':
+printf("Введено число '6'.\n");
+break;
+case '7':
+printf("Введено число '7'.\n");
+break;
+case '8':
+printf("Введено число '8'.\n");
+break;
+case '9':
+printf("Введено число '9'.\n");
+break;
+default:
+printf("Неизвестный символ\n");
+}
+
+float x, y;
+char o;
+puts("Введите операцию:");
+scanf(" %f%c%f", &x, &o, &y);
+switch (o)
+{
+case '+':
+printf("%f", x + y);
+break;
+case '-':
+printf("%f", x - y);
+break;
+case '*':
+printf("%f", x * y);
+break;
+case '/':
+printf("%f", x / y);
+break;
+case '**':
+printf("%f", pow(x, y));
+break;
+default:
+printf("Неизвестная операция");
+}
